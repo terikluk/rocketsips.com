@@ -71,13 +71,12 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-5xl mx-auto">
           <h2 className="font-display text-4xl text-cosmic-cream text-center mb-12">What We&rsquo;re About</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {VALUES.map(({ emoji, title, desc }) => (
+            {VALUES.map(({ title, desc }) => (
               <div
                 key={title}
                 className="bg-cosmic-navy/50 border border-white/10 rounded-2xl p-8 text-center hover:border-cosmic-pink/30 transition-colors"
               >
-                <span className="text-5xl block mb-4 animate-float">{emoji}</span>
-                <h3 className="font-display text-2xl text-cosmic-cream mb-3">{title}</h3>
+                <h3 className="font-display text-2xl text-gradient-pink-teal mb-3">{title}</h3>
                 <p className="font-sans text-sm text-cosmic-cream/65 leading-relaxed">{desc}</p>
               </div>
             ))}

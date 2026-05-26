@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { MenuItem } from '@/lib/menu-data'
 
 interface DrinkCardProps {
@@ -14,16 +15,28 @@ const TAG_LABELS: Record<string, string> = {
 }
 
 export default function DrinkCard({ drink, variant = 'default' }: DrinkCardProps) {
-  const bandHeight = variant === 'compact' ? 'h-20' : 'h-32'
+  const bandHeight = variant === 'compact' ? 'h-20' : 'h-48'
 
   return (
     <article className="drink-card relative rounded-2xl overflow-hidden border border-white/10 bg-cosmic-navy flex flex-col cursor-pointer group">
-      {/* Gradient band with emoji */}
-      <div className={`${bandHeight} w-full bg-gradient-to-br ${drink.gradient.from} ${drink.gradient.via ?? ''} ${drink.gradient.to} flex items-center justify-center relative`}>
+      {/* Image or gradient band */}
+      <div className={`${bandHeight} w-full relative overflow-hidden`}>
         <div className="card-shine" />
-        <span className="text-5xl group-hover:scale-125 transition-transform duration-300 select-none drop-shadow-lg">
-          {drink.emoji}
-        </span>
+        {drink.imageSrc ? (
+          <Image
+            src={drink.imageSrc}
+            alt={drink.name}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        ) : (
+          <div className={`w-full h-full bg-gradient-to-br ${drink.gradient.from} ${drink.gradient.via ?? ''} ${drink.gradient.to} flex items-center justify-center`}>
+            <span className="text-5xl group-hover:scale-125 transition-transform duration-300 select-none drop-shadow-lg">
+              {drink.emoji}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Card body */}

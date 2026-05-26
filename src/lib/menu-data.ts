@@ -16,6 +16,7 @@ export interface MenuItem {
   gradient: DrinkGradient
   tags?: string[]
   featured?: boolean
+  imageSrc?: string
 }
 
 export const menuItems: MenuItem[] = [
@@ -30,6 +31,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-purple-500', via: 'via-pink-400', to: 'to-rose-400' },
     tags: ['fan-favorite'],
     featured: true,
+    imageSrc: '/images/the_mall.jpg',
   },
   {
     id: '30a',
@@ -41,6 +43,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-sky-400', via: 'via-blue-400', to: 'to-cyan-300' },
     tags: ['local-legend'],
     featured: true,
+    imageSrc: '/images/30a.jpg',
   },
   {
     id: 'eggbeater-jesus',
@@ -52,6 +55,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-amber-300', via: 'via-yellow-400', to: 'to-orange-300' },
     tags: ['fan-favorite', 'local-legend'],
     featured: true,
+    imageSrc: '/images/eggbeater_jesus.jpg',
   },
   {
     id: 'the-block-party',
@@ -63,6 +67,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-orange-400', via: 'via-red-400', to: 'to-pink-500' },
     tags: ['fan-favorite'],
     featured: true,
+    imageSrc: '/images/block_party.jpg',
   },
   {
     id: 'baker-and-able',

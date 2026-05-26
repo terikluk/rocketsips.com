@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import PageHero from '@/components/sections/PageHero'
@@ -10,10 +9,10 @@ import { featuredDrinks } from '@/lib/menu-data'
 const HERO_VIDEO = 'https://videos.pexels.com/video-files/3250490/3250490-hd_1920_1080_30fps.mp4'
 
 const PERKS = [
-  { imageSrc: '/images/16_signature_drinks.jpg', title: '16 Signature Drinks', desc: 'Every one named, every one legendary.' },
-  { imageSrc: '/images/fully_customizable.jpg',  title: 'Fully Customizable',  desc: 'Mix, match, and make it yours.' },
-  { imageSrc: '/images/family_friendly.jpg',     title: 'Family Friendly',     desc: 'Stellar drinks for every astronaut.' },
-  { imageSrc: '/images/huntsville_proud.jpg',    title: 'Huntsville Proud',    desc: 'Born here. Made for here. Loved everywhere.' },
+  { emoji: '🚀', title: '16 Signature Drinks', desc: 'Every one named, every one legendary.' },
+  { emoji: '🎨', title: 'Fully Customizable',  desc: 'Mix, match, and make it yours.' },
+  { emoji: '👨‍👩‍👧', title: 'Family Friendly',     desc: 'Stellar drinks for every astronaut.' },
+  { emoji: '📍', title: 'Huntsville Proud',    desc: 'Born here. Made for here. Loved everywhere.' },
 ]
 
 export default function Home() {
@@ -67,13 +66,13 @@ export default function Home() {
       {/* Perks strip */}
       <section className="py-16 px-4 bg-cosmic-purple">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {PERKS.map(({ imageSrc, title, desc }) => (
-            <div key={title} className="flex flex-col items-center">
-              <div className="relative w-20 h-20 mb-3">
-                <Image src={imageSrc} alt={title} fill className="object-contain" sizes="80px" />
+          {PERKS.map(({ emoji, title, desc }) => (
+            <div key={title} className="flex flex-col items-center gap-3">
+              <div className="w-16 h-16 rounded-2xl bg-cosmic-navy/60 border border-white/10 flex items-center justify-center text-3xl animate-float">
+                {emoji}
               </div>
-              <h3 className="font-display text-lg text-cosmic-cream">{title}</h3>
-              <p className="font-sans text-sm text-cosmic-cream/55 mt-1">{desc}</p>
+              <h3 className="font-display text-xl text-gradient-pink-teal">{title}</h3>
+              <p className="font-sans text-sm text-cosmic-cream/60 leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>

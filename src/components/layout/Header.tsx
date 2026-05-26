@@ -7,7 +7,7 @@ import Image from 'next/image'
 const NAV_LINKS = [
   { label: 'Menu',    href: '/menu'    },
   { label: 'About',   href: '/about'   },
-  { label: 'Contact', href: '/contact', pink: true },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function Header() {
@@ -37,11 +37,11 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map(({ label, href, pink }) => (
+          {NAV_LINKS.map(({ label, href }) => (
             <Link
               key={href}
               href={href}
-              className={`font-sans text-sm font-semibold tracking-wide transition-colors ${pink ? 'text-cosmic-pink hover:text-cosmic-pink/70' : 'text-cosmic-cream/90 hover:text-cosmic-pink'}`}
+              className="font-sans text-sm font-semibold tracking-wide text-white hover:text-cosmic-pink transition-colors"
             >
               {label}
             </Link>

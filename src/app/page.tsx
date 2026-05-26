@@ -57,7 +57,7 @@ export default function Home() {
               href="/menu"
               className="inline-block font-display text-xl text-cosmic-pink border border-cosmic-pink/50 px-8 py-3 rounded-full hover:bg-cosmic-pink hover:text-white transition-all"
             >
-              View Full Menu →
+              View Full Menu
             </Link>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function Home() {
               href="/about"
               className="inline-block font-display text-lg text-cosmic-pink hover:text-cosmic-cream transition-colors"
             >
-              Our Full Story →
+              Our Full Story
             </Link>
           </div>
         </div>

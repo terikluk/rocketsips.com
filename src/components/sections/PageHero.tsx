@@ -82,15 +82,6 @@ export default function PageHero({
           </div>
         )}
 
-        {/* Scroll hint on full-height heroes */}
-        {height === 'full' && (
-          <div
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float opacity-50"
-            style={{ animationDelay: '1s' }}
-          >
-            <span className="text-2xl">↓</span>
-          </div>
-        )}
       </div>
     </section>
   )

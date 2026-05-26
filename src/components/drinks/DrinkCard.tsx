@@ -5,6 +5,7 @@ interface DrinkCardProps {
   drink: MenuItem
   variant?: 'default' | 'compact'
   showPrice?: boolean
+  centerPrice?: boolean
 }
 
 const TAG_LABELS: Record<string, string> = {
@@ -15,7 +16,7 @@ const TAG_LABELS: Record<string, string> = {
   'mysterious':    '👽 Secret',
 }
 
-export default function DrinkCard({ drink, variant = 'default', showPrice = true }: DrinkCardProps) {
+export default function DrinkCard({ drink, variant = 'default', showPrice = true, centerPrice = false }: DrinkCardProps) {
   const bandHeight = variant === 'compact' ? 'h-20' : 'h-48'
 
   return (
@@ -52,7 +53,7 @@ export default function DrinkCard({ drink, variant = 'default', showPrice = true
           </p>
         )}
 
-        <div className="flex items-center justify-between mt-3 flex-wrap gap-2">
+        <div className={`flex items-center mt-3 flex-wrap gap-2 ${centerPrice ? 'justify-center' : 'justify-between'}`}>
           {showPrice && (
             <span className="inline-block bg-cosmic-pink/20 text-cosmic-pink border border-cosmic-pink/40 text-sm font-sans font-semibold px-3 py-1 rounded-full">
               {drink.price}

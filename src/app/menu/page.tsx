@@ -143,7 +143,7 @@ export default function MenuPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {kidsDrinks.map(drink => (
-              <DrinkCard key={drink.id} drink={drink} />
+              <DrinkCard key={drink.id} drink={drink} centerPrice />
             ))}
           </div>
         </div>

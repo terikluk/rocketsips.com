@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const NAV_LINKS = [
   { label: 'Menu',    href: '/menu'    },
@@ -22,13 +21,20 @@ export default function Header() {
           className="flex items-center gap-2 group"
           onClick={() => setOpen(false)}
         >
-          <Image
-            src="/images/logo.png"
-            alt="Rocket Sips"
-            width={160}
-            height={54}
-            className="h-10 w-auto object-contain"
-            priority
+          <div
+            aria-label="Rocket Sips"
+            className="h-10 w-40"
+            style={{
+              background: 'linear-gradient(135deg, #FF3D7F 0%, #c44dff 50%, #00E5FF 100%)',
+              WebkitMaskImage: 'url(/images/logo.png)',
+              WebkitMaskSize: 'contain',
+              WebkitMaskRepeat: 'no-repeat',
+              WebkitMaskPosition: 'left center',
+              maskImage: 'url(/images/logo.png)',
+              maskSize: 'contain',
+              maskRepeat: 'no-repeat',
+              maskPosition: 'left center',
+            }}
           />
         </Link>
 

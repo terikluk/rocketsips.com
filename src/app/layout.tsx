@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display, Boogaloo, Sansita } from 'next/font/google'
+import { Inter, Playfair_Display, Boogaloo, Sansita, Lobster } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({
@@ -28,6 +28,13 @@ const sansita = Sansita({
   display: 'swap',
 })
 
+const lobster = Lobster({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-lobster',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
   title: 'Rocket Sips | Dirty Soda. Stellar Snacks.',
   description:
@@ -44,7 +51,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} ${boogaloo.variable} ${sansita.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} ${boogaloo.variable} ${sansita.variable} ${lobster.variable}`}>
       <body className="bg-cosmic-navy text-cosmic-cream font-sans antialiased">
         {children}
       </body>

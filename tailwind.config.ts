@@ -20,6 +20,7 @@ const config: Config = {
       },
       fontFamily: {
         brand:   ['var(--font-sansita)', 'sans-serif'],
+        lobster: ['var(--font-lobster)', 'cursive'],
         display: ['var(--font-boogaloo)', 'cursive'],
         serif:   ['var(--font-playfair)', 'Georgia', 'serif'],
         sans:    ['var(--font-inter)', 'system-ui', 'sans-serif'],

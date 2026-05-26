@@ -22,15 +22,17 @@ export default function Header() {
           className="flex items-center gap-2 group"
           onClick={() => setOpen(false)}
         >
-          <Image
-            src="/images/rocket-sips.png"
-            alt="Rocket Sips"
-            width={180}
-            height={60}
-            className="h-10 w-auto object-contain"
-            style={{ mixBlendMode: 'multiply' }}
-            priority
-          />
+          <div className="bg-white rounded-xl px-2 py-1">
+            <Image
+              src="/images/rocket-sips.png"
+              alt="Rocket Sips"
+              width={180}
+              height={60}
+              className="h-8 w-auto object-contain"
+              style={{ mixBlendMode: 'multiply' }}
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop nav */}

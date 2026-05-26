@@ -4,7 +4,6 @@ import PageHero from '@/components/sections/PageHero'
 import CTASection from '@/components/sections/CTASection'
 import DrinkCard from '@/components/drinks/DrinkCard'
 import { featuredDrinks } from '@/lib/menu-data'
-import Link from 'next/link'
 
 const HERO_VIDEO = 'https://videos.pexels.com/video-files/3250490/3250490-hd_1920_1080_30fps.mp4'
 
@@ -73,44 +72,6 @@ export default function Home() {
               <p className="font-sans text-sm text-cosmic-cream/55 mt-1">{desc}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* About snippet */}
-      <section className="py-20 px-4 bg-cosmic-navy">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          {/* Visual */}
-          <div className="relative flex items-center justify-center">
-            <div className="w-64 h-64 rounded-full bg-gradient-to-br from-cosmic-pink via-purple-700 to-cosmic-teal opacity-20 blur-3xl absolute" />
-            <span className="text-9xl relative z-10 animate-float">🚀</span>
-          </div>
-
-          {/* Text */}
-          <div>
-            <p className="font-sans text-sm text-cosmic-teal uppercase tracking-widest mb-3">
-              Our Story
-            </p>
-            <h2 className="font-display text-4xl sm:text-5xl text-cosmic-cream mb-5 leading-tight">
-              Born in Huntsville.<br />
-              <span className="text-gradient-pink-teal">Built for Orbit.</span>
-            </h2>
-            <p className="font-sans text-base text-cosmic-cream/70 leading-relaxed mb-4">
-              Rocket Sips is Huntsville&rsquo;s love letter to the art of the dirty soda — a customizable,
-              over-the-top, impossibly delicious carbonated creation that&rsquo;s equal parts science
-              and magic. We&rsquo;re named after the rockets that put people on the moon,
-              and we&rsquo;re aiming just as high with your taste buds.
-            </p>
-            <p className="font-sans text-base text-cosmic-cream/70 leading-relaxed mb-8">
-              Every drink on our menu is named with love for this city, this state, and the
-              adventurous spirit that makes Huntsville so special. Come find your orbit.
-            </p>
-            <Link
-              href="/about"
-              className="inline-block font-display text-lg text-cosmic-pink hover:text-cosmic-cream transition-colors"
-            >
-              Our Full Story
-            </Link>
-          </div>
         </div>
       </section>
 

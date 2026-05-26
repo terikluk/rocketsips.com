@@ -50,6 +50,14 @@ export default function PageHero({
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-hero-overlay z-10" />
 
+      {/* Flying rocket */}
+      <span
+        aria-hidden="true"
+        className="absolute bottom-24 left-0 text-5xl animate-rocket-fly z-10 pointer-events-none select-none"
+      >
+        🚀
+      </span>
+
       {/* Content */}
       <div className="relative z-20 text-center px-4 max-w-5xl mx-auto pt-16">
         <h1

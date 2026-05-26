@@ -45,6 +45,12 @@ const config: Config = {
           '0%':   { transform: 'translateX(-100%) skewX(-15deg)' },
           '100%': { transform: 'translateX(300%) skewX(-15deg)' },
         },
+        'rocket-fly': {
+          '0%':   { transform: 'translate(-80px, 60px) rotate(45deg)', opacity: '0' },
+          '6%':   { opacity: '0.85' },
+          '88%':  { opacity: '0.85' },
+          '100%': { transform: 'translate(2200px, -700px) rotate(45deg)', opacity: '0' },
+        },
       },
       animation: {
         twinkle:        'twinkle 2.8s ease-in-out infinite',
@@ -54,6 +60,7 @@ const config: Config = {
         'fade-up':      'fade-up 0.7s ease-out forwards',
         'glow-pulse':   'glow-pulse 2.2s ease-in-out infinite',
         'card-shine':   'card-shine 0.6s ease-out forwards',
+        'rocket-fly':   'rocket-fly 22s linear infinite',
       },
       backgroundImage: {
         'cosmic-radial': 'radial-gradient(ellipse at top, #1A0A3C 0%, #0D0B2B 65%)',

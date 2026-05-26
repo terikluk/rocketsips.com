@@ -2,11 +2,12 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const NAV_LINKS = [
   { label: 'Menu',    href: '/menu'    },
   { label: 'About',   href: '/about'   },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Contact', href: '/contact', pink: true },
 ]
 
 export default function Header() {
@@ -21,31 +22,28 @@ export default function Header() {
           className="flex items-center gap-2 group"
           onClick={() => setOpen(false)}
         >
-          <span
-            className="font-brand text-3xl text-cosmic-pink"
-            style={{ WebkitTextStroke: '1.5px white' }}
-          >
-            Rocket Sips
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt="Rocket Sips"
+            width={160}
+            height={54}
+            className="h-10 w-auto object-contain"
+            style={{ filter: 'brightness(0) saturate(100%) invert(38%) sepia(90%) saturate(800%) hue-rotate(295deg) brightness(115%)' }}
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map(({ label, href }) => (
+          {NAV_LINKS.map(({ label, href, pink }) => (
             <Link
               key={href}
               href={href}
-              className="font-sans text-sm font-semibold tracking-wide text-cosmic-cream/90 hover:text-cosmic-pink transition-colors"
+              className={`font-sans text-sm font-semibold tracking-wide transition-colors ${pink ? 'text-cosmic-pink hover:text-cosmic-pink/70' : 'text-cosmic-cream/90 hover:text-cosmic-pink'}`}
             >
               {label}
             </Link>
           ))}
-          <a
-            href="tel:2567639699"
-            className="font-sans text-sm font-semibold text-white bg-cosmic-pink px-4 py-2 rounded-full hover:bg-cosmic-pink/80 transition-colors"
-          >
-            Call Us
-          </a>
         </nav>
 
         {/* Mobile hamburger */}

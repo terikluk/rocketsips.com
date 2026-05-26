@@ -28,7 +28,6 @@ export default function Header() {
             width={160}
             height={54}
             className="h-10 w-auto object-contain"
-            style={{ filter: 'brightness(0) saturate(100%) invert(38%) sepia(90%) saturate(800%) hue-rotate(295deg) brightness(115%) drop-shadow(0 0 1px white) drop-shadow(0 0 1px white)' }}
             priority
           />
         </Link>

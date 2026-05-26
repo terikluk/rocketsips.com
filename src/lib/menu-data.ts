@@ -210,6 +210,7 @@ export const menuItems: MenuItem[] = [
     emoji: '⭐🍓',
     category: 'kids',
     gradient: { from: 'from-pink-300', to: 'to-rose-300' },
+    imageSrc: '/images/starlet.png',
   },
   {
     id: 'hays-gator',
@@ -219,6 +220,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🐊💚',
     category: 'kids',
     gradient: { from: 'from-green-400', to: 'to-lime-300' },
+    imageSrc: '/images/hays_gator.png',
   },
   {
     id: 'shark-attack',
@@ -228,6 +230,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🦈💙',
     category: 'kids',
     gradient: { from: 'from-blue-400', via: 'via-cyan-400', to: 'to-sky-300' },
+    imageSrc: '/images/shark_attack.png',
   },
 
   // ── Snacks ───────────────────────────────────────────────────

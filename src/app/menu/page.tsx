@@ -105,13 +105,16 @@ export default function MenuPage() {
             {BOOSTERS.map(({ name, imageSrc }) => (
               <div
                 key={name}
-                className="flex flex-col items-center gap-2 bg-cosmic-purple border border-white/10 rounded-2xl p-4 w-44 hover:border-cosmic-teal/40 transition-colors"
+                className="drink-card relative rounded-2xl overflow-hidden flex flex-col cursor-pointer group w-44"
               >
-                <div className="relative w-28 h-28">
-                  <Image src={imageSrc} alt={name} fill className="object-contain" sizes="112px" />
+                <div className="h-48 w-full relative overflow-hidden">
+                  <div className="card-shine" />
+                  <Image src={imageSrc} alt={name} fill className="object-contain p-3 group-hover:scale-105 transition-transform duration-500" sizes="176px" />
                 </div>
-                <p className="font-display text-lg text-cosmic-cream text-center">{name}</p>
-                <p className="font-sans text-xs text-cosmic-teal">+$2.00</p>
+                <div className="p-4 flex flex-col items-center gap-1">
+                  <p className="font-display text-lg text-cosmic-cream text-center group-hover:text-cosmic-pink transition-colors">{name}</p>
+                  <p className="font-sans text-xs text-cosmic-teal">+$2.00</p>
+                </div>
               </div>
             ))}
           </div>

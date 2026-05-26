@@ -22,7 +22,7 @@ export default function Header() {
           onClick={() => setOpen(false)}
         >
           <span className="text-2xl group-hover:animate-float">🚀</span>
-          <span className="font-display text-xl text-cosmic-pink tracking-wide">
+          <span className="font-brand text-xl text-cosmic-pink tracking-wide">
             Rocket Sips
           </span>
         </Link>

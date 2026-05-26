@@ -31,7 +31,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-purple-500', via: 'via-pink-400', to: 'to-rose-400' },
     tags: ['fan-favorite'],
     featured: true,
-    imageSrc: '/images/the_mall.jpg',
+    imageSrc: '/images/the_mall.png',
   },
   {
     id: '30a',
@@ -43,7 +43,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-sky-400', via: 'via-blue-400', to: 'to-cyan-300' },
     tags: ['local-legend'],
     featured: true,
-    imageSrc: '/images/30a.jpg',
+    imageSrc: '/images/30a.png',
   },
   {
     id: 'eggbeater-jesus',
@@ -67,7 +67,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-orange-400', via: 'via-red-400', to: 'to-pink-500' },
     tags: ['fan-favorite'],
     featured: true,
-    imageSrc: '/images/block_party.jpg',
+    imageSrc: '/images/block_party.png',
   },
   {
     id: 'baker-and-able',
@@ -77,7 +77,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🧁☕',
     category: 'signature',
     gradient: { from: 'from-amber-600', via: 'via-orange-500', to: 'to-yellow-400' },
-    imageSrc: '/images/baker_and_abel.jpg',
+    imageSrc: '/images/baker_and_abel.png',
   },
   {
     id: 'space-cowboy',
@@ -89,7 +89,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-yellow-400', via: 'via-lime-400', to: 'to-green-500' },
     tags: ['fan-favorite'],
     featured: true,
-    imageSrc: '/images/space_cowboy.jpg',
+    imageSrc: '/images/space_cowboy.png',
   },
   {
     id: 'was-that-thunder',
@@ -99,7 +99,7 @@ export const menuItems: MenuItem[] = [
     emoji: '⚡🌩️',
     category: 'signature',
     gradient: { from: 'from-slate-600', via: 'via-blue-700', to: 'to-indigo-800' },
-    imageSrc: '/images/was_that_thunder.jpg',
+    imageSrc: '/images/was_that_thunder.png',
   },
   {
     id: 'space-force',
@@ -111,7 +111,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-red-500', via: 'via-orange-500', to: 'to-yellow-500' },
     tags: ['high-energy'],
     featured: true,
-    imageSrc: '/images/space_force.jpg',
+    imageSrc: '/images/space_force.png',
   },
   {
     id: 'the-gulf',
@@ -122,7 +122,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-teal-500', via: 'via-cyan-500', to: 'to-blue-600' },
     tags: ['local-legend'],
-    imageSrc: '/images/the_gulf.jpg',
+    imageSrc: '/images/the_gulf.png',
   },
   {
     id: 'pcb',
@@ -133,7 +133,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-pink-400', via: 'via-rose-400', to: 'to-fuchsia-500' },
     tags: ['local-legend'],
-    imageSrc: '/images/pcb.jpg',
+    imageSrc: '/images/pcb.png',
   },
   {
     id: 'gate-9',
@@ -144,7 +144,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-gray-700', via: 'via-slate-600', to: 'to-blue-800' },
     tags: ['local-legend'],
-    imageSrc: '/images/gate_9.jpg',
+    imageSrc: '/images/gate_9.png',
   },
   {
     id: 'ditto',
@@ -155,7 +155,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-violet-500', via: 'via-purple-500', to: 'to-fuchsia-600' },
     tags: ['fan-favorite'],
-    imageSrc: '/images/ditto.jpg',
+    imageSrc: '/images/ditto.png',
   },
   {
     id: 'lilys-brew',
@@ -165,7 +165,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🌸🍵',
     category: 'signature',
     gradient: { from: 'from-pink-300', via: 'via-rose-300', to: 'to-purple-300' },
-    imageSrc: '/images/lilys_brew.jpg',
+    imageSrc: '/images/lilys_brew.png',
   },
   {
     id: 'moontown-magic',
@@ -177,7 +177,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-blue-600', via: 'via-cyan-500', to: 'to-teal-400' },
     tags: ['local-legend'],
     featured: true,
-    imageSrc: '/images/moontown_magic.jpg',
+    imageSrc: '/images/moontown_magic.png',
   },
   {
     id: 'the-campout',
@@ -187,7 +187,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🏕️🔥',
     category: 'signature',
     gradient: { from: 'from-amber-800', via: 'via-orange-700', to: 'to-yellow-600' },
-    imageSrc: '/images/the_campout.jpg',
+    imageSrc: '/images/the_campout.png',
   },
   {
     id: 'area-51',
@@ -198,7 +198,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-green-400', via: 'via-emerald-500', to: 'to-teal-600' },
     tags: ['mysterious'],
-    imageSrc: '/images/area_51.jpg',
+    imageSrc: '/images/area_51.png',
   },
 
   // ── Kids Drinks ──────────────────────────────────────────────

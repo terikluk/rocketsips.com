@@ -77,6 +77,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🧁☕',
     category: 'signature',
     gradient: { from: 'from-amber-600', via: 'via-orange-500', to: 'to-yellow-400' },
+    imageSrc: '/images/baker_and_abel.jpg',
   },
   {
     id: 'space-cowboy',
@@ -88,6 +89,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-yellow-400', via: 'via-lime-400', to: 'to-green-500' },
     tags: ['fan-favorite'],
     featured: true,
+    imageSrc: '/images/space_cowboy.jpg',
   },
   {
     id: 'was-that-thunder',
@@ -97,6 +99,7 @@ export const menuItems: MenuItem[] = [
     emoji: '⚡🌩️',
     category: 'signature',
     gradient: { from: 'from-slate-600', via: 'via-blue-700', to: 'to-indigo-800' },
+    imageSrc: '/images/was_that_thunder.jpg',
   },
   {
     id: 'space-force',
@@ -108,6 +111,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-red-500', via: 'via-orange-500', to: 'to-yellow-500' },
     tags: ['high-energy'],
     featured: true,
+    imageSrc: '/images/space_force.jpg',
   },
   {
     id: 'the-gulf',
@@ -118,6 +122,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-teal-500', via: 'via-cyan-500', to: 'to-blue-600' },
     tags: ['local-legend'],
+    imageSrc: '/images/the_gulf.jpg',
   },
   {
     id: 'pcb',
@@ -128,6 +133,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-pink-400', via: 'via-rose-400', to: 'to-fuchsia-500' },
     tags: ['local-legend'],
+    imageSrc: '/images/pcb.jpg',
   },
   {
     id: 'gate-9',
@@ -138,6 +144,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-gray-700', via: 'via-slate-600', to: 'to-blue-800' },
     tags: ['local-legend'],
+    imageSrc: '/images/gate_9.jpg',
   },
   {
     id: 'ditto',
@@ -148,6 +155,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-violet-500', via: 'via-purple-500', to: 'to-fuchsia-600' },
     tags: ['fan-favorite'],
+    imageSrc: '/images/ditto.jpg',
   },
   {
     id: 'lilys-brew',
@@ -157,6 +165,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🌸🍵',
     category: 'signature',
     gradient: { from: 'from-pink-300', via: 'via-rose-300', to: 'to-purple-300' },
+    imageSrc: '/images/lilys_brew.jpg',
   },
   {
     id: 'moontown-magic',
@@ -168,6 +177,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-blue-600', via: 'via-cyan-500', to: 'to-teal-400' },
     tags: ['local-legend'],
     featured: true,
+    imageSrc: '/images/moontown_magic.jpg',
   },
   {
     id: 'the-campout',
@@ -177,6 +187,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🏕️🔥',
     category: 'signature',
     gradient: { from: 'from-amber-800', via: 'via-orange-700', to: 'to-yellow-600' },
+    imageSrc: '/images/the_campout.jpg',
   },
   {
     id: 'area-51',
@@ -187,6 +198,7 @@ export const menuItems: MenuItem[] = [
     category: 'signature',
     gradient: { from: 'from-green-400', via: 'via-emerald-500', to: 'to-teal-600' },
     tags: ['mysterious'],
+    imageSrc: '/images/area_51.jpg',
   },
 
   // ── Kids Drinks ──────────────────────────────────────────────

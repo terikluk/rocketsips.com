@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const NAV_LINKS = [
   { label: 'Menu',    href: '/menu'    },
@@ -21,9 +22,15 @@ export default function Header() {
           className="flex items-center gap-2 group"
           onClick={() => setOpen(false)}
         >
-          <span className="font-brand text-4xl text-gradient-pink-teal">
-            Rocket Sips
-          </span>
+          <Image
+            src="/images/rocket-sips.png"
+            alt="Rocket Sips"
+            width={180}
+            height={60}
+            className="h-10 w-auto object-contain"
+            style={{ mixBlendMode: 'multiply' }}
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

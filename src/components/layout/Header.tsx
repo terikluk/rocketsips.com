@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const NAV_LINKS = [
   { label: 'Menu',    href: '/menu'    },
@@ -22,27 +21,31 @@ export default function Header() {
           className="flex items-center gap-2 group"
           onClick={() => setOpen(false)}
         >
-          <Image
-            src="/images/logo.png"
-            alt="Rocket Sips"
-            width={140}
-            height={48}
-            className="h-10 w-auto object-contain"
-            priority
-          />
+          <span
+            className="font-brand text-3xl text-cosmic-pink"
+            style={{ WebkitTextStroke: '1.5px white' }}
+          >
+            Rocket Sips
+          </span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map(({ label, href }) => (
             <Link
               key={href}
               href={href}
-              className="font-sans text-sm text-cosmic-cream/80 hover:text-cosmic-pink transition-colors"
+              className="font-sans text-sm font-semibold tracking-wide text-cosmic-cream/90 hover:text-cosmic-pink transition-colors"
             >
               {label}
             </Link>
           ))}
+          <a
+            href="tel:2567639699"
+            className="font-sans text-sm font-semibold text-white bg-cosmic-pink px-4 py-2 rounded-full hover:bg-cosmic-pink/80 transition-colors"
+          >
+            Call Us
+          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -73,7 +76,7 @@ export default function Header() {
             className="font-display text-2xl text-cosmic-pink mt-2"
             onClick={() => setOpen(false)}
           >
-            📞 Call Us
+            Call Us
           </a>
         </nav>
       )}

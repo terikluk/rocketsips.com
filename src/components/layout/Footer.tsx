@@ -16,7 +16,6 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <span className="text-3xl">🚀</span>
             <span className="font-display text-2xl text-cosmic-pink">Rocket Sips</span>
           </div>
           <p className="text-gradient-pink-teal font-display text-lg mb-4">

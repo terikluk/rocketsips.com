@@ -48,7 +48,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {featuredDrinks.slice(0, 3).map(drink => (
-              <DrinkCard key={drink.id} drink={drink} />
+              <DrinkCard key={drink.id} drink={drink} showPrice={false} />
             ))}
           </div>
 

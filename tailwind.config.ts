@@ -26,8 +26,8 @@ const config: Config = {
       },
       keyframes: {
         twinkle: {
-          '0%, 100%': { opacity: '1', transform: 'scale(1)' },
-          '50%':      { opacity: '0.2', transform: 'scale(0.5)' },
+          '0%, 100%': { opacity: '1',   transform: 'scale(1)' },
+          '50%':      { opacity: '0.1', transform: 'scale(0.4)' },
         },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },

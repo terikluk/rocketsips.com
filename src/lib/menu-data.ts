@@ -213,7 +213,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'hays-gator',
-    name: "Hays Gator",
+    name: "Hay's Gator",
     description: 'Lime soda with gummies on top. The coolest drink in the solar system.',
     price: '$1.50+',
     emoji: '🐊💚',

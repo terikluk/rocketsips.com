@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import PageHero from '@/components/sections/PageHero'
@@ -9,10 +10,10 @@ import { featuredDrinks } from '@/lib/menu-data'
 const HERO_VIDEO = 'https://videos.pexels.com/video-files/3250490/3250490-hd_1920_1080_30fps.mp4'
 
 const PERKS = [
-  { emoji: '🚀', title: '16 Signature Drinks', desc: 'Every one named, every one legendary.' },
-  { emoji: '🎨', title: 'Fully Customizable', desc: 'Mix, match, and make it yours.' },
-  { emoji: '👨‍👩‍👧', title: 'Family Friendly', desc: 'Stellar drinks for every astronaut.' },
-  { emoji: '📍', title: 'Huntsville Proud', desc: 'Born here. Made for here. Loved everywhere.' },
+  { imageSrc: '/images/16_signature_drinks.jpg', title: '16 Signature Drinks', desc: 'Every one named, every one legendary.' },
+  { imageSrc: '/images/fully_customizable.jpg',  title: 'Fully Customizable',  desc: 'Mix, match, and make it yours.' },
+  { imageSrc: '/images/family_friendly.jpg',     title: 'Family Friendly',     desc: 'Stellar drinks for every astronaut.' },
+  { imageSrc: '/images/huntsville_proud.jpg',    title: 'Huntsville Proud',    desc: 'Born here. Made for here. Loved everywhere.' },
 ]
 
 export default function Home() {
@@ -66,9 +67,11 @@ export default function Home() {
       {/* Perks strip */}
       <section className="py-16 px-4 bg-cosmic-purple">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {PERKS.map(({ emoji, title, desc }) => (
-            <div key={title}>
-              <span className="text-4xl block mb-3 animate-float">{emoji}</span>
+          {PERKS.map(({ imageSrc, title, desc }) => (
+            <div key={title} className="flex flex-col items-center">
+              <div className="relative w-20 h-20 mb-3">
+                <Image src={imageSrc} alt={title} fill className="object-contain" sizes="80px" />
+              </div>
               <h3 className="font-display text-lg text-cosmic-cream">{title}</h3>
               <p className="font-sans text-sm text-cosmic-cream/55 mt-1">{desc}</p>
             </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import PageHero from '@/components/sections/PageHero'
@@ -25,9 +26,9 @@ const ADD_INS = [
 ]
 
 const BOOSTERS = [
-  { name: 'Rocket Fuel',        emoji: '🔥' },
-  { name: "It's Rocket Science", emoji: '🧪' },
-  { name: 'Dark Matter',        emoji: '🌑' },
+  { name: 'Rocket Fuel',         imageSrc: '/images/rocket_fuel.png' },
+  { name: "It's Rocket Science", imageSrc: '/images/its_rocket_science.png' },
+  { name: 'Dark Matter',         imageSrc: '/images/dark_matter.png' },
 ]
 
 const SIZES = [
@@ -101,12 +102,14 @@ export default function MenuPage() {
           <h2 className="font-display text-3xl text-cosmic-cream mb-2">Energy Boosters</h2>
           <p className="font-sans text-sm text-cosmic-cream/55 mb-8">Add +$2.00 for lift-off speed</p>
           <div className="flex flex-wrap justify-center gap-6">
-            {BOOSTERS.map(({ name, emoji }) => (
+            {BOOSTERS.map(({ name, imageSrc }) => (
               <div
                 key={name}
-                className="flex flex-col items-center gap-2 bg-cosmic-purple border border-white/10 rounded-2xl p-6 w-40 hover:border-cosmic-teal/40 transition-colors"
+                className="flex flex-col items-center gap-2 bg-cosmic-purple border border-white/10 rounded-2xl p-4 w-44 hover:border-cosmic-teal/40 transition-colors"
               >
-                <span className="text-4xl animate-float">{emoji}</span>
+                <div className="relative w-28 h-28">
+                  <Image src={imageSrc} alt={name} fill className="object-contain" sizes="112px" />
+                </div>
                 <p className="font-display text-lg text-cosmic-cream text-center">{name}</p>
                 <p className="font-sans text-xs text-cosmic-teal">+$2.00</p>
               </div>

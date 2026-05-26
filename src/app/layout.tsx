@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display, Boogaloo, Sansita } from 'next/font/google'
-import StarField from '@/components/ui/StarField'
 import './globals.css'
 
 const inter = Inter({
@@ -47,7 +46,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} ${boogaloo.variable} ${sansita.variable}`}>
       <body className="bg-cosmic-navy text-cosmic-cream font-sans antialiased">
-        <StarField fixed className="opacity-60" />
         {children}
       </body>
     </html>

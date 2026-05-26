@@ -55,7 +55,7 @@ export const menuItems: MenuItem[] = [
     gradient: { from: 'from-amber-300', via: 'via-yellow-400', to: 'to-orange-300' },
     tags: ['fan-favorite', 'local-legend'],
     featured: true,
-    imageSrc: '/images/eggbeater_jesus.jpg',
+    imageSrc: '/images/eggbeater_jesus.png',
   },
   {
     id: 'the-block-party',

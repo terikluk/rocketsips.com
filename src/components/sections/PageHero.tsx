@@ -77,7 +77,7 @@ export default function PageHero({
               href={ctaHref}
               className="inline-block font-display text-xl sm:text-2xl text-white bg-cosmic-pink px-10 py-4 rounded-full animate-glow-pulse hover:scale-105 transition-transform"
             >
-              {ctaLabel} 🚀
+              {ctaLabel}
             </a>
           </div>
         )}

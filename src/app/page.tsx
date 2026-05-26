@@ -66,11 +66,8 @@ export default function Home() {
       {/* Perks strip */}
       <section className="py-16 px-4 bg-cosmic-purple">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {PERKS.map(({ emoji, title, desc }) => (
+          {PERKS.map(({ title, desc }) => (
             <div key={title} className="flex flex-col items-center gap-3">
-              <div className="w-16 h-16 rounded-2xl bg-cosmic-navy/60 border border-white/10 flex items-center justify-center text-3xl animate-float">
-                {emoji}
-              </div>
               <h3 className="font-display text-xl text-gradient-pink-teal">{title}</h3>
               <p className="font-sans text-sm text-cosmic-cream/60 leading-relaxed">{desc}</p>
             </div>

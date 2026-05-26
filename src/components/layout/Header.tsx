@@ -34,7 +34,7 @@ export default function Header() {
               maskSize: 'contain',
               maskRepeat: 'no-repeat',
               maskPosition: 'left center',
-              filter: 'drop-shadow(1px 0 0 white) drop-shadow(-1px 0 0 white) drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white)',
+              filter: 'drop-shadow(0 0 6px rgba(0,0,0,1)) drop-shadow(0 0 12px rgba(0,0,0,0.9)) drop-shadow(2px 0 0 white) drop-shadow(-2px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(0 -2px 0 white)',
             }}
           />
         </Link>

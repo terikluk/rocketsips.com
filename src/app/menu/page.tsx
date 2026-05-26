@@ -49,6 +49,17 @@ export default function MenuPage() {
         height="half"
       />
 
+      {/* Soda Bases */}
+      <section className="py-12 px-4 bg-cosmic-navy">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-display text-3xl text-cosmic-cream mb-2">Soda Bases</h2>
+          <p className="font-sans text-sm text-cosmic-cream/55 mb-6">Pick your foundation, then we build the magic.</p>
+          <p className="font-sans text-cosmic-cream/75 leading-relaxed">
+            {SODA_BASES.join(' · ')}
+          </p>
+        </div>
+      </section>
+
       {/* Signature Sodas */}
       <section className="py-16 px-4 bg-cosmic-navy starfield">
         <div className="relative z-10 max-w-7xl mx-auto">
@@ -79,24 +90,6 @@ export default function MenuPage() {
                 <p className="font-sans text-sm text-cosmic-cream/60 mt-1">{oz}</p>
                 <p className="font-display text-lg text-cosmic-cream mt-2">{price}</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Soda Bases */}
-      <section className="py-14 px-4 bg-cosmic-navy">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-display text-3xl text-cosmic-cream mb-2">Soda Bases</h2>
-          <p className="font-sans text-sm text-cosmic-cream/55 mb-8">Pick your foundation, then we build the magic.</p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {SODA_BASES.map(base => (
-              <span
-                key={base}
-                className="font-sans text-sm text-cosmic-cream/80 bg-cosmic-purple border border-white/10 px-4 py-2 rounded-full hover:border-cosmic-pink/40 hover:text-cosmic-cream transition-colors"
-              >
-                {base}
-              </span>
             ))}
           </div>
         </div>

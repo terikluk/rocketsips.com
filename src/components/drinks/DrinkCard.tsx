@@ -16,7 +16,7 @@ const TAG_LABELS: Record<string, string> = {
 }
 
 export default function DrinkCard({ drink, variant = 'default', showPrice = true }: DrinkCardProps) {
-  const bandHeight = variant === 'compact' ? 'h-20' : 'h-48'
+  const bandHeight = variant === 'compact' ? 'h-20' : 'aspect-square'
 
   return (
     <article className="drink-card relative rounded-2xl overflow-hidden flex flex-col cursor-pointer group">
@@ -28,7 +28,7 @@ export default function DrinkCard({ drink, variant = 'default', showPrice = true
             src={drink.imageSrc}
             alt={drink.name}
             fill
-            className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : (

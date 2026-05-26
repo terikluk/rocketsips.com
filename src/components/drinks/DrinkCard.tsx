@@ -4,6 +4,7 @@ import { MenuItem } from '@/lib/menu-data'
 interface DrinkCardProps {
   drink: MenuItem
   variant?: 'default' | 'compact'
+  showPrice?: boolean
 }
 
 const TAG_LABELS: Record<string, string> = {
@@ -14,7 +15,7 @@ const TAG_LABELS: Record<string, string> = {
   'mysterious':    '👽 Secret',
 }
 
-export default function DrinkCard({ drink, variant = 'default' }: DrinkCardProps) {
+export default function DrinkCard({ drink, variant = 'default', showPrice = true }: DrinkCardProps) {
   const bandHeight = variant === 'compact' ? 'h-20' : 'h-48'
 
   return (
@@ -52,9 +53,11 @@ export default function DrinkCard({ drink, variant = 'default' }: DrinkCardProps
         )}
 
         <div className="flex items-center justify-between mt-3 flex-wrap gap-2">
-          <span className="inline-block bg-cosmic-pink/20 text-cosmic-pink border border-cosmic-pink/40 text-sm font-sans font-semibold px-3 py-1 rounded-full">
-            {drink.price}
-          </span>
+          {showPrice && (
+            <span className="inline-block bg-cosmic-pink/20 text-cosmic-pink border border-cosmic-pink/40 text-sm font-sans font-semibold px-3 py-1 rounded-full">
+              {drink.price}
+            </span>
+          )}
 
           {drink.tags && drink.tags.length > 0 && (
             <div className="flex flex-wrap gap-1">

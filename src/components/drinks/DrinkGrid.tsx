@@ -43,7 +43,7 @@ export default function DrinkGrid() {
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {filtered.map(drink => (
-          <DrinkCard key={drink.id} drink={drink} />
+          <DrinkCard key={drink.id} drink={drink} showPrice={false} />
         ))}
       </div>
 

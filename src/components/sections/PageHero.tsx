@@ -7,7 +7,7 @@ interface PageHeroProps {
   videoSrc?: string
   ctaLabel?: string
   ctaHref?: string
-  height?: 'full' | 'half'
+  height?: 'full' | 'half' | 'short'
 }
 
 export default function PageHero({
@@ -19,7 +19,7 @@ export default function PageHero({
   ctaHref,
   height = 'full',
 }: PageHeroProps) {
-  const heightClass = height === 'full' ? 'min-h-screen' : 'min-h-[60vh]'
+  const heightClass = height === 'full' ? 'min-h-screen' : height === 'short' ? 'min-h-0 py-20 pt-32' : 'min-h-[60vh]'
 
   return (
     <section className={`relative flex items-center justify-center ${heightClass} overflow-hidden`}>

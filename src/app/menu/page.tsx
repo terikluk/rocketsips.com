@@ -46,7 +46,7 @@ export default function MenuPage() {
         title="The Launchpad Menu"
         subtitle="16 Signature Sodas + Stellar Snacks. Choose your orbit."
         backgroundType="gradient"
-        height="half"
+        height="short"
       />
 
       {/* Soda Bases */}

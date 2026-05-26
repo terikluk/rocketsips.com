@@ -85,7 +85,7 @@ export default function ContactPage() {
             rel="noopener noreferrer"
             className="inline-block font-display text-xl text-white bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 px-8 py-3 rounded-full hover:scale-105 transition-transform"
           >
-            📸 @rocketsips on Instagram
+            @rocketsips on Instagram
           </a>
           <a
             href="https://facebook.com/rocketsips"
@@ -93,7 +93,7 @@ export default function ContactPage() {
             rel="noopener noreferrer"
             className="inline-block font-display text-xl text-white bg-blue-700 px-8 py-3 rounded-full hover:scale-105 transition-transform"
           >
-            👍 Rocket Sips on Facebook
+            Rocket Sips on Facebook
           </a>
         </div>
       </section>

@@ -242,6 +242,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🍪🌟',
     category: 'snack',
     gradient: { from: 'from-yellow-200', to: 'to-pink-200' },
+    imageSrc: '/images/frosted_sugar_cookie.png',
   },
   {
     id: 'chocolate-chip-cookie',
@@ -251,6 +252,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🍪🍫',
     category: 'snack',
     gradient: { from: 'from-amber-700', to: 'to-yellow-600' },
+    imageSrc: '/images/chocolate_chip_cookie.png',
   },
   {
     id: 'caramel-crispix',
@@ -260,6 +262,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🍮✨',
     category: 'snack',
     gradient: { from: 'from-amber-400', to: 'to-orange-400' },
+    imageSrc: '/images/caramel_crispix.png',
   },
   {
     id: 'soft-pretzel-bites',
@@ -269,6 +272,7 @@ export const menuItems: MenuItem[] = [
     emoji: '🥨🧀',
     category: 'snack',
     gradient: { from: 'from-amber-600', to: 'to-yellow-500' },
+    imageSrc: '/images/pretzel_bites.png',
   },
 ]
 

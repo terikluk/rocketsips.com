@@ -19,7 +19,7 @@ export default function DrinkCard({ drink, variant = 'default', showPrice = true
   const bandHeight = variant === 'compact' ? 'h-20' : 'h-48'
 
   return (
-    <article className="drink-card relative rounded-2xl overflow-hidden border border-white/10 bg-cosmic-navy flex flex-col cursor-pointer group">
+    <article className="drink-card relative rounded-2xl overflow-hidden flex flex-col cursor-pointer group">
       {/* Image or gradient band */}
       <div className={`${bandHeight} w-full relative overflow-hidden`}>
         <div className="card-shine" />

@@ -1,0 +1,83 @@
+'use client'
+
+import { useState } from 'react'
+import Link from 'next/link'
+
+const NAV_LINKS = [
+  { label: 'Menu',    href: '/menu'    },
+  { label: 'About',   href: '/about'   },
+  { label: 'Contact', href: '/contact' },
+]
+
+export default function Header() {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-cosmic-navy/90 backdrop-blur-md border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="flex items-center gap-2 group"
+          onClick={() => setOpen(false)}
+        >
+          <span className="text-2xl group-hover:animate-float">🚀</span>
+          <span className="font-display text-xl text-cosmic-pink tracking-wide">
+            Rocket Sips
+          </span>
+        </Link>
+
+        {/* Desktop nav */}
+        <nav className="hidden md:flex items-center gap-6">
+          {NAV_LINKS.map(({ label, href }) => (
+            <Link
+              key={href}
+              href={href}
+              className="font-sans text-sm text-cosmic-cream/80 hover:text-cosmic-pink transition-colors"
+            >
+              {label}
+            </Link>
+          ))}
+          <a
+            href="tel:2567639699"
+            className="font-sans text-sm bg-cosmic-pink text-white px-5 py-2 rounded-full hover:bg-cosmic-pink/85 animate-glow-pulse transition-all"
+          >
+            Order Now
+          </a>
+        </nav>
+
+        {/* Mobile hamburger */}
+        <button
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          className="md:hidden text-cosmic-cream text-2xl p-1"
+          onClick={() => setOpen(prev => !prev)}
+        >
+          {open ? '✕' : '☰'}
+        </button>
+      </div>
+
+      {/* Mobile nav drawer */}
+      {open && (
+        <nav className="md:hidden absolute top-full left-0 right-0 bg-cosmic-purple border-b border-white/10 flex flex-col p-6 gap-5">
+          {NAV_LINKS.map(({ label, href }) => (
+            <Link
+              key={href}
+              href={href}
+              className="font-display text-2xl text-cosmic-cream hover:text-cosmic-pink transition-colors"
+              onClick={() => setOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
+          <a
+            href="tel:2567639699"
+            className="font-display text-2xl text-cosmic-pink mt-2"
+            onClick={() => setOpen(false)}
+          >
+            📞 Call Us
+          </a>
+        </nav>
+      )}
+    </header>
+  )
+}

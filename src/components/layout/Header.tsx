@@ -43,12 +43,6 @@ export default function Header() {
               {label}
             </Link>
           ))}
-          <a
-            href="tel:2567639699"
-            className="font-sans text-sm bg-cosmic-pink text-white px-5 py-2 rounded-full hover:bg-cosmic-pink/85 animate-glow-pulse transition-all"
-          >
-            Order Now
-          </a>
         </nav>
 
         {/* Mobile hamburger */}

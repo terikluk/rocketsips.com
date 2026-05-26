@@ -3,6 +3,7 @@ import Footer from '@/components/layout/Footer'
 import PageHero from '@/components/sections/PageHero'
 import CTASection from '@/components/sections/CTASection'
 import DrinkCard from '@/components/drinks/DrinkCard'
+import Link from 'next/link'
 import { featuredDrinks } from '@/lib/menu-data'
 
 const HERO_VIDEO = 'https://videos.pexels.com/video-files/3250490/3250490-hd_1920_1080_30fps.mp4'

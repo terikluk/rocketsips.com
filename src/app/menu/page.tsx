@@ -159,7 +159,7 @@ export default function MenuPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {snacks.map(drink => (
-              <DrinkCard key={drink.id} drink={drink} />
+              <DrinkCard key={drink.id} drink={drink} centerPrice />
             ))}
           </div>
           <p className="font-sans text-xs text-cosmic-cream/40 mt-6">

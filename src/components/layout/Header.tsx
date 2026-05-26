@@ -21,7 +21,7 @@ export default function Header() {
           className="flex items-center gap-2 group"
           onClick={() => setOpen(false)}
         >
-          <span className="font-lobster text-3xl text-cosmic-pink">
+          <span className="font-lobster text-3xl text-gradient-pink-teal">
             Rocket Sips
           </span>
         </Link>

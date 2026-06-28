@@ -178,7 +178,7 @@ export default function MenuPage() {
         headline="Can&apos;t Decide?"
         subtext="Our crew loves helping you find your perfect drink. Give us a call!"
         ctaLabel="📞 Call Us"
-        ctaHref="tel:2567639699"
+        ctaHref="tel:7135550199"
         variant="pink"
       />
 

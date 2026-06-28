@@ -36,14 +36,14 @@ const lobster = Lobster({
 })
 
 export const metadata: Metadata = {
-  title: 'Rocket Sips | Dirty Soda. Stellar Snacks.',
+  title: 'Shuttle Sips | Dirty Soda. Stellar Snacks.',
   description:
-    "Huntsville, AL's favorite space-themed dirty soda shop. 16 signature drinks, cosmic vibes, stellar snacks. 8415 Whitesburg Dr., Suite B.",
-  keywords: ['dirty soda', 'Huntsville AL', 'rocket sips', 'specialty drinks', 'soda shop'],
+    "Houston's favorite space-themed dirty soda shop. 16 signature drinks, cosmic vibes, stellar snacks. 123 Galaxy Way, Suite B.",
+  keywords: ['dirty soda', 'Houston TX', 'shuttle sips', 'specialty drinks', 'soda shop'],
   openGraph: {
-    title: 'Rocket Sips | Dirty Soda. Stellar Snacks.',
-    description: "Huntsville AL's most cosmic beverage experience.",
-    siteName: 'Rocket Sips',
+    title: 'Shuttle Sips | Dirty Soda. Stellar Snacks.',
+    description: "Houston's most cosmic beverage experience.",
+    siteName: 'Shuttle Sips',
     locale: 'en_US',
     type: 'website',
   },

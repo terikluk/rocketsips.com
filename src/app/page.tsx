@@ -12,7 +12,7 @@ const PERKS = [
   { emoji: '🚀', title: '16 Signature Drinks', desc: 'Every one named, every one legendary.' },
   { emoji: '🎨', title: 'Fully Customizable',  desc: 'Mix, match, and make it yours.' },
   { emoji: '👨‍👩‍👧', title: 'Family Friendly',     desc: 'Stellar drinks for every astronaut.' },
-  { emoji: '📍', title: 'Huntsville Proud',    desc: 'Born here. Made for here. Loved everywhere.' },
+  { emoji: '📍', title: 'Houston Proud',       desc: 'Born here. Made for here. Loved everywhere.' },
 ]
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
       {/* Hero */}
       <PageHero
         title="Dirty Soda. Stellar Snacks."
-        subtitle="Huntsville's most cosmic beverage experience — 16 signature drinks and counting."
+        subtitle="Houston's most cosmic beverage experience — 16 signature drinks and counting."
         backgroundType="video"
         videoSrc={HERO_VIDEO}
         ctaLabel="See the Menu"
@@ -78,9 +78,9 @@ export default function Home() {
       {/* CTA */}
       <CTASection
         headline="Ready for Liftoff?"
-        subtext="Come see us at 8415 Whitesburg Dr., Suite B, Huntsville, AL."
-        ctaLabel="Get Directions"
-        ctaHref="https://maps.google.com/maps?q=8415+Whitesburg+Dr,+Huntsville,+AL+35802"
+        subtext="Come see us at 123 Galaxy Way, Suite B, Houston, TX."
+        ctaLabel="View Hours & Contact"
+        ctaHref="/contact"
         variant="gradient"
       />
 

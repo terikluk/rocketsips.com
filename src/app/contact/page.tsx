@@ -16,7 +16,7 @@ export default function ContactPage() {
 
       <PageHero
         title="Find the Launchpad"
-        subtitle="8415 Whitesburg Dr., Suite B · Huntsville, AL 35802"
+        subtitle="123 Galaxy Way, Suite B · Houston, TX 77058"
         backgroundType="gradient"
         height="half"
       />
@@ -40,36 +40,18 @@ export default function ContactPage() {
 
             <h2 className="font-display text-3xl text-cosmic-cream mb-4">Contact</h2>
             <address className="not-italic font-sans text-base text-cosmic-cream/70 leading-relaxed mb-3">
-              8415 Whitesburg Dr., Suite B<br />
-              Huntsville, AL 35802
+              123 Galaxy Way, Suite B<br />
+              Houston, TX 77058
             </address>
-            <a
-              href="tel:2567639699"
-              className="block font-display text-2xl text-cosmic-pink hover:text-cosmic-cream transition-colors mb-6"
-            >
-              (256) 763-9699
-            </a>
-            <a
-              href="https://maps.google.com/maps?q=8415+Whitesburg+Dr,+Huntsville,+AL+35802"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block font-sans text-sm text-cosmic-teal border border-cosmic-teal/40 px-5 py-2.5 rounded-full hover:bg-cosmic-teal/10 transition-colors"
-            >
-              Open in Google Maps ↗
-            </a>
+            <p className="font-display text-2xl text-cosmic-pink mb-6">
+              (713) 555-0199
+            </p>
           </div>
 
-          {/* Map embed */}
-          <div className="aspect-square sm:aspect-video rounded-2xl overflow-hidden border border-white/10">
-            <iframe
-              title="Rocket Sips location map"
-              src="https://maps.google.com/maps?q=8415+Whitesburg+Dr,+Huntsville,+AL+35802&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          {/* Map placeholder */}
+          <div className="aspect-square sm:aspect-video rounded-2xl overflow-hidden border border-white/10 bg-cosmic-purple/40 flex flex-col items-center justify-center gap-3">
+            <p className="font-display text-2xl text-cosmic-cream/40">Map</p>
+            <p className="font-sans text-sm text-cosmic-cream/25">Demo Only</p>
           </div>
         </div>
       </section>
@@ -79,22 +61,12 @@ export default function ContactPage() {
         <h2 className="font-display text-4xl text-cosmic-cream mb-3">Follow the Mission</h2>
         <p className="font-sans text-cosmic-cream/60 mb-8">Stay up to date with new drinks, specials, and cosmic happenings.</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a
-            href="https://instagram.com/rocketsips"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-display text-xl text-white bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 px-8 py-3 rounded-full hover:scale-105 transition-transform"
-          >
-            @rocketsips on Instagram
-          </a>
-          <a
-            href="https://facebook.com/rocketsips"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-display text-xl text-white bg-blue-700 px-8 py-3 rounded-full hover:scale-105 transition-transform"
-          >
-            Rocket Sips on Facebook
-          </a>
+          <span className="inline-block font-display text-xl text-white/40 bg-white/10 px-8 py-3 rounded-full cursor-default">
+            @shuttlesips on Instagram
+          </span>
+          <span className="inline-block font-display text-xl text-white/40 bg-white/10 px-8 py-3 rounded-full cursor-default">
+            Shuttle Sips on Facebook
+          </span>
         </div>
       </section>
 

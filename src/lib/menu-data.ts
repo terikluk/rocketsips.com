@@ -170,7 +170,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'moontown-magic',
     name: 'Moontown Magic',
-    description: 'Root beer with butterscotch, vanilla, vanilla cream & cold foam. A love letter to Huntsville\'s Moontown.',
+    description: 'Root beer with butterscotch, vanilla, vanilla cream & cold foam. A love letter to Houston\'s beloved live music scene.',
     price: '$5.50+',
     emoji: '🌙✨',
     category: 'signature',

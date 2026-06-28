@@ -51,7 +51,7 @@ export default function PageHero({
       <div className="absolute inset-0 bg-hero-overlay z-10" />
 
       {/* Content */}
-      <div className="relative z-20 text-center px-4 max-w-5xl mx-auto pt-16">
+      <div className="relative z-20 text-center px-4 max-w-5xl mx-auto pt-28">
         <h1
           className="font-display text-5xl sm:text-7xl lg:text-8xl text-gradient-pink-teal animate-fade-up leading-tight"
           style={{ animationFillMode: 'both' }}

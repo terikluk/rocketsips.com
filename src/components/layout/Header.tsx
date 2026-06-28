@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import DemoBanner from '@/components/layout/DemoBanner'
 
 const NAV_LINKS = [
   { label: 'Menu',    href: '/menu'    },
@@ -14,6 +15,8 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-cosmic-navy/90 backdrop-blur-md border-b border-white/10">
+      <DemoBanner />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link
@@ -22,7 +25,7 @@ export default function Header() {
           onClick={() => setOpen(false)}
         >
           <span className="font-lobster text-3xl text-gradient-pink-teal">
-            Rocket Sips
+            Shuttle Sips
           </span>
         </Link>
 
@@ -62,13 +65,6 @@ export default function Header() {
               {label}
             </Link>
           ))}
-          <a
-            href="tel:2567639699"
-            className="font-display text-2xl text-cosmic-pink mt-2"
-            onClick={() => setOpen(false)}
-          >
-            Call Us
-          </a>
         </nav>
       )}
     </header>

@@ -6,17 +6,14 @@ import Link from 'next/link'
 
 const VALUES = [
   {
-    emoji: '🌌',
     title: 'Cosmic Creativity',
     desc: "We don't do boring. Every drink is a small act of imagination — named, crafted, and served with a personality.",
   },
   {
-    emoji: '📍',
     title: 'Local Pride',
-    desc: "From Moontown Magic to Gate 9, our menu is a love letter to Huntsville and the Gulf Coast communities we call home.",
+    desc: "From Moontown Magic to Gate 9, our menu is a love letter to Houston and the Gulf Coast communities we call home.",
   },
   {
-    emoji: '👨‍👩‍👧‍👦',
     title: 'Family First',
     desc: 'Little astronauts get their own special drinks. Everyone belongs in our orbit — kids, parents, and everyone in between.',
   },
@@ -28,8 +25,8 @@ export default function AboutPage() {
       <Header />
 
       <PageHero
-        title="We&apos;re Rocket Sips"
-        subtitle="Space-themed. Huntsville-born. Absurdly delicious."
+        title="We&apos;re Shuttle Sips"
+        subtitle="Space-themed. Houston-born. Absurdly delicious."
         backgroundType="gradient"
         height="half"
       />
@@ -39,27 +36,28 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto">
           <p className="font-sans text-sm text-cosmic-teal uppercase tracking-widest mb-4">Our Origin Story</p>
           <h2 className="font-display text-4xl sm:text-5xl text-cosmic-cream mb-8 leading-tight">
-            Born in the{' '}
-            <span className="text-gradient-pink-teal">Rocket City.</span>
+            Born in{' '}
+            <span className="text-gradient-pink-teal">Space City.</span>
           </h2>
           <div className="space-y-5 font-sans text-base text-cosmic-cream/75 leading-relaxed">
             <p>
-              Huntsville, Alabama didn&rsquo;t just launch rockets — it launched a culture of bold thinking,
-              big dreams, and a refusal to settle for ordinary. That same spirit is what Rocket Sips
-              is built on. We opened our doors at 8415 Whitesburg Dr. to bring something the
-              Rocket City had never seen: a dirty soda shop that takes the craft seriously and the
-              vibes even more seriously.
+              Houston didn&rsquo;t just talk to the moon — it built the mission. Home to NASA&rsquo;s
+              Johnson Space Center and a culture of bold thinking, big dreams, and a refusal to
+              settle for ordinary. That same spirit is what Shuttle Sips is built on. A concept brand
+              born in the heart of Space City, designed to bring something the city of astronauts
+              truly deserves: a dirty soda shop that takes the craft seriously and the vibes
+              even more seriously.
             </p>
             <p>
-              Every drink on our menu is named with intention. The Moontown Magic nods to
-              Huntsville&rsquo;s beloved amphitheater. The Gulf, 30A, and PCB honor the Gulf Coast
+              Every drink on the menu is named with intention. The Moontown Magic nods to
+              Houston&rsquo;s beloved live music scene. The Gulf, 30A, and PCB honor the Gulf Coast
               communities that so many of us escape to each summer. Area 51 stays classified.
               Eggbeater Jesus remains unexplained. That&rsquo;s just how we roll.
             </p>
             <p>
               We believe a great soda can be a whole experience — a conversation starter, a memory
-              maker, a small piece of joy in the middle of a Tuesday. We&rsquo;re family-friendly,
-              absurdly creative, and deeply committed to making Huntsville proud, one cup at a time.
+              maker, a small piece of joy in the middle of a Tuesday. Family-friendly,
+              absurdly creative, and deeply committed to making Houston proud, one cup at a time.
             </p>
           </div>
         </div>
@@ -89,15 +87,12 @@ export default function AboutPage() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-display text-4xl text-cosmic-cream mb-4">Come Visit the Launchpad</h2>
           <address className="not-italic font-sans text-lg text-cosmic-cream/70 mb-2">
-            8415 Whitesburg Dr., Suite B<br />
-            Huntsville, AL 35802
+            123 Galaxy Way, Suite B<br />
+            Houston, TX 77058
           </address>
-          <a
-            href="tel:2567639699"
-            className="block font-sans text-cosmic-pink text-lg mb-8 hover:text-cosmic-cream transition-colors"
-          >
-            (256) 763-9699
-          </a>
+          <p className="font-sans text-cosmic-pink text-lg mb-8">
+            (713) 555-0199
+          </p>
           <Link
             href="/contact"
             className="inline-block font-display text-xl text-cosmic-pink border border-cosmic-pink/50 px-8 py-3 rounded-full hover:bg-cosmic-pink hover:text-white transition-all"

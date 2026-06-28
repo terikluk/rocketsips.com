@@ -16,13 +16,13 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <span className="font-display text-2xl text-cosmic-pink">Rocket Sips</span>
+            <span className="font-display text-2xl text-cosmic-pink">Shuttle Sips</span>
           </div>
           <p className="text-gradient-pink-teal font-display text-lg mb-4">
             Dirty Soda. Stellar Snacks.
           </p>
           <p className="font-sans text-sm text-cosmic-cream/60 leading-relaxed">
-            Huntsville&rsquo;s most cosmic beverage experience. Come for the soda,
+            Houston&rsquo;s most cosmic beverage experience. Come for the soda,
             stay for the vibes.
           </p>
         </div>
@@ -46,32 +46,15 @@ export default function Footer() {
         <div>
           <h3 className="font-display text-xl text-cosmic-teal mb-4">Find Us</h3>
           <address className="not-italic font-sans text-sm text-cosmic-cream/70 leading-relaxed mb-4">
-            8415 Whitesburg Dr., Suite B<br />
-            Huntsville, AL 35802
+            123 Galaxy Way, Suite B<br />
+            Houston, TX 77058
           </address>
-          <a
-            href="tel:2567639699"
-            className="block font-sans text-sm text-cosmic-pink hover:text-cosmic-cream transition-colors mb-4"
-          >
-            (256) 763-9699
-          </a>
+          <p className="block font-sans text-sm text-cosmic-pink mb-4">
+            (713) 555-0199
+          </p>
           <div className="flex gap-4">
-            <a
-              href="https://instagram.com/rocketsips"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-sans text-sm text-cosmic-cream/60 hover:text-cosmic-pink transition-colors"
-            >
-              Instagram ↗
-            </a>
-            <a
-              href="https://facebook.com/rocketsips"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-sans text-sm text-cosmic-cream/60 hover:text-cosmic-pink transition-colors"
-            >
-              Facebook ↗
-            </a>
+            <span className="font-sans text-sm text-cosmic-cream/40">Instagram ↗</span>
+            <span className="font-sans text-sm text-cosmic-cream/40">Facebook ↗</span>
           </div>
         </div>
       </div>
@@ -79,7 +62,16 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="relative z-10 border-t border-white/10 py-4 text-center">
         <p className="font-sans text-xs text-cosmic-cream/30">
-          © {new Date().getFullYear()} Rocket Sips. All rights reserved. Made with 🚀 in Huntsville, AL.
+          Concept site designed &amp; built by{' '}
+          <a
+            href="https://yellowhammerstudios.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-cosmic-cream/60 transition-colors"
+          >
+            Yellowhammer Studios
+          </a>
+          {' '}— {new Date().getFullYear()}
         </p>
       </div>
     </footer>

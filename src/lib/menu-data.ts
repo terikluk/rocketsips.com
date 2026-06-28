@@ -256,7 +256,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'caramel-crispix',
-    name: 'Caramel Crispix',
+    name: 'Caramel Crunch',
     description: 'Sweet caramel crunch mix. Dangerous. You will eat the whole bag.',
     price: '$3.00',
     emoji: '🍮✨',

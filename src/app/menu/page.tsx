@@ -26,9 +26,9 @@ const ADD_INS = [
 ]
 
 const BOOSTERS = [
-  { name: 'Rocket Fuel',         imageSrc: '/images/rocket_fuel.png' },
-  { name: "It's Rocket Science", imageSrc: '/images/its_rocket_science.png' },
-  { name: 'Dark Matter',         imageSrc: '/images/dark_matter.png' },
+  { name: 'Hyperdrive',     imageSrc: '/images/rocket_fuel.png' },
+  { name: 'The Formula',    imageSrc: '/images/its_rocket_science.png' },
+  { name: 'Event Horizon',  imageSrc: '/images/dark_matter.png' },
 ]
 
 const SIZES = [

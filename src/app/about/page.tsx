@@ -11,7 +11,7 @@ const VALUES = [
   },
   {
     title: 'Local Pride',
-    desc: "From Moontown Magic to Gate 9, our menu is a love letter to Houston and the Gulf Coast communities we call home.",
+    desc: "From Stardust Palace to Terminal B, our menu is a love letter to Houston and the Gulf Coast communities we call home.",
   },
   {
     title: 'Family First',
@@ -49,10 +49,10 @@ export default function AboutPage() {
               even more seriously.
             </p>
             <p>
-              Every drink on the menu is named with intention. The Moontown Magic nods to
-              Houston&rsquo;s beloved live music scene. The Gulf, 30A, and PCB honor the Gulf Coast
-              communities that so many of us escape to each summer. Area 51 stays classified.
-              Eggbeater Jesus remains unexplained. That&rsquo;s just how we roll.
+              Every drink on the menu is named with intention. Stardust Palace is a love letter
+              to the Houston night sky. Galveston Bay, The Boardwalk, and Kemah Sunset honor the
+              Gulf Coast communities that so many of us escape to each summer. Area 51 stays
+              classified. The Divinity remains unexplained. That&rsquo;s just how we roll.
             </p>
             <p>
               We believe a great soda can be a whole experience — a conversation starter, a memory

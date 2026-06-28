@@ -204,8 +204,8 @@ export const menuItems: MenuItem[] = [
   // ── Kids Drinks ──────────────────────────────────────────────
   {
     id: 'the-starlet',
-    name: 'The Starlet',
-    description: 'Strawberry Sprite with whipped cream and rainbow gummies. Pure stardom.',
+    name: 'Pink Nebula',
+    description: 'Strawberry Sprite with pink whipped cream and strawberry gummies. Cosmic and completely extra.',
     price: '$1.50+',
     emoji: '⭐🍓',
     category: 'kids',
@@ -214,8 +214,8 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'hays-gator',
-    name: "Hay's Gator",
-    description: 'Lime soda with gummies on top. The coolest drink in the solar system.',
+    name: 'Alien Slime',
+    description: 'Lime soda with green star gummies on top. Kids go absolutely feral for this one.',
     price: '$1.50+',
     emoji: '🐊💚',
     category: 'kids',
@@ -224,8 +224,8 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'shark-attack',
-    name: 'Shark Attack',
-    description: 'Blue raspberry Sprite with shark gummies. Chomp.',
+    name: 'Splash Down',
+    description: 'Blue raspberry Sprite with shark gummies. Houston, the capsule has landed.',
     price: '$1.50+',
     emoji: '🦈💙',
     category: 'kids',

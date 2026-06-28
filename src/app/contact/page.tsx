@@ -48,10 +48,16 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* Map placeholder */}
-          <div className="aspect-square sm:aspect-video rounded-2xl overflow-hidden border border-white/10 bg-cosmic-purple/40 flex flex-col items-center justify-center gap-3">
-            <p className="font-display text-2xl text-cosmic-cream/40">Map</p>
-            <p className="font-sans text-sm text-cosmic-cream/25">Demo Only</p>
+          {/* Map */}
+          <div className="aspect-square sm:aspect-video rounded-2xl overflow-hidden border border-white/10">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-95.12%2C29.52%2C-95.06%2C29.59&layer=mapnik"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: 'invert(0.9) hue-rotate(180deg) saturate(0.7)' }}
+              loading="lazy"
+              title="Shuttle Sips location map"
+            />
           </div>
         </div>
       </section>

@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import DemoBanner from '@/components/layout/DemoBanner'
 
 const NAV_LINKS = [
   { label: 'Menu',    href: '/menu'    },
@@ -15,8 +14,6 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-cosmic-navy/90 backdrop-blur-md border-b border-white/10">
-      <DemoBanner />
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link

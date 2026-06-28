@@ -24,7 +24,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'the-galleria',
     name: 'The Galleria',
-    description: 'Sprite with strawberry puree & vanilla cream. Glam vibes, zero boring.',
+    description: 'Sprite with white peach, raspberry & coconut cream. Glam vibes, zero boring.',
     price: '$5.50+',
     emoji: '💎✨',
     category: 'signature',
@@ -36,7 +36,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'the-boardwalk',
     name: 'The Boardwalk',
-    description: 'Sprite with strawberry, vanilla & vanilla cream. Kemah nights in every sip.',
+    description: 'Sprite with coconut, pineapple & hibiscus cream. Kemah nights in every sip.',
     price: '$5.50+',
     emoji: '🎡🌴',
     category: 'signature',
@@ -48,7 +48,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'the-divinity',
     name: 'The Divinity',
-    description: 'Sprite with fresh lemon, fresh lime & lemonade. Legendary. Inexplicable. You will order it twice.',
+    description: 'Sprite with fresh lemon, honey & cold foam. Legendary. Inexplicable. You will order it twice.',
     price: '$5.50+',
     emoji: '😇✨',
     category: 'signature',
@@ -60,7 +60,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'the-montrose',
     name: 'The Montrose',
-    description: 'Dr. Pepper with coconut, vanilla, fresh lime & coconut cream. Everyone\'s invited.',
+    description: 'Dr. Pepper with blackberry, lime & vanilla cream. Bold enough for the arts district.',
     price: '$5.50+',
     emoji: '🎨🎉',
     category: 'signature',
@@ -72,7 +72,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'sugar-land',
     name: 'Sugar Land',
-    description: 'Dr. Pepper with raspberry puree, vanilla & vanilla cream. Sweet, capable, surprisingly sophisticated.',
+    description: 'Dr. Pepper with caramel, brown sugar & vanilla cream. Sweet enough to rename a city after.',
     price: '$5.50+',
     emoji: '🧁🍯',
     category: 'signature',
@@ -82,7 +82,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'space-cowboy',
     name: 'Space Cowboy',
-    description: 'Dr. Pepper with pomegranate & fresh lime. Bold, refreshing, yeehaw from orbit.',
+    description: 'Dr. Pepper with pomegranate, cinnamon & vanilla cream. Yeehaw from orbit.',
     price: '$5.50+',
     emoji: '🤠🚀',
     category: 'signature',
@@ -94,7 +94,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'flash-flood',
     name: 'Flash Flood',
-    description: 'Coke with cranberry, vanilla & fresh lime. Storm in a cup — you\'ll feel it.',
+    description: 'Coke with blueberry, pomegranate & fresh lime. Storm in a cup — you\'ll feel it.',
     price: '$5.50+',
     emoji: '⚡🌧️',
     category: 'signature',
@@ -104,7 +104,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'copy-that-houston',
     name: 'Copy That, Houston',
-    description: 'Coke with vanilla, grenadine & fresh lime + energy booster. Maximum power, maximum flavor.',
+    description: 'Coke with cherry, fresh lime & energy booster. Houston, we have liftoff.',
     price: '$7.00+',
     emoji: '📡🛸',
     category: 'signature',
@@ -116,7 +116,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'galveston-bay',
     name: 'Galveston Bay',
-    description: 'Coke with coconut & fresh lime. Warm, deep, and unforgettable — just like the real thing.',
+    description: 'Coke with coconut, caramel & sea salt cream. Deep and warm, just like the bay.',
     price: '$5.50+',
     emoji: '🐚🌅',
     category: 'signature',
@@ -127,7 +127,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'kemah-sunset',
     name: 'Kemah Sunset',
-    description: 'Mt. Dew with pineapple, peach, mango puree & coconut cream. Golden hour in a cup.',
+    description: 'Mt. Dew with mango, passion fruit & hibiscus cream. Golden hour in a cup.',
     price: '$5.50+',
     emoji: '🌺🎡',
     category: 'signature',
@@ -138,7 +138,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'terminal-b',
     name: 'Terminal B',
-    description: 'Mt. Dew with peach, strawberry & raspberry. Bold, no-nonsense, ready for departure.',
+    description: 'Mt. Dew with cranberry, cherry & raspberry. Bold enough to miss your flight for.',
     price: '$5.50+',
     emoji: '✈️🎯',
     category: 'signature',
@@ -149,7 +149,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'the-nebula',
     name: 'The Nebula',
-    description: 'Mt. Dew with strawberry & mango puree. Deep space flavor. You won\'t come back the same.',
+    description: 'Mt. Dew with blueberry, blackberry & lavender cream. Deep space has never tasted this good.',
     price: '$5.50+',
     emoji: '🌌💫',
     category: 'signature',
@@ -160,7 +160,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'moon-garden',
     name: 'Moon Garden',
-    description: 'Root beer with vanilla cream & cold foam. Delicate, dreamy, and totally magical.',
+    description: 'Root beer with rose syrup, vanilla & cold foam. Delicate, dreamy, and totally magical.',
     price: '$5.50+',
     emoji: '🌸🌙',
     category: 'signature',
@@ -170,7 +170,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'stardust-palace',
     name: 'Stardust Palace',
-    description: 'Root beer with butterscotch, vanilla, vanilla cream & cold foam. A love letter to the night sky.',
+    description: 'Root beer with butterscotch, vanilla & cold foam. A love letter to the night sky.',
     price: '$5.50+',
     emoji: '🏰✨',
     category: 'signature',
@@ -182,7 +182,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'lost-pines',
     name: 'Lost Pines',
-    description: 'Root beer with toasted marshmallow & cold foam. S\'mores vibes, zero campfire required.',
+    description: 'Root beer with toasted marshmallow, chocolate drizzle & graham cold foam. No campfire required.',
     price: '$5.50+',
     emoji: '🏕️🌲',
     category: 'signature',
